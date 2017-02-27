@@ -1,0 +1,137 @@
+<link rel="stylesheet" type="text/css" href="../css/sign.css">
+<div class="sign">
+	<div class="path">
+		<a href="#">首页</a>
+		>>
+		<span style="font-weight: 4px;">注册</span>
+	</div>
+	<div id="sign-body">
+		<div id="sign-body-rank" class="left-basicmenu">
+			<div class="left-title">注册</div>
+			<div class="left-submenu">
+				<ul>
+					<li value="0" onclick="sign_rank_slider(this.value)">A级用户</li>
+					<li value="1" onclick="sign_rank_slider(this.value)">B级用户</li>
+					<li value="2" onclick="sign_rank_slider(this.value)">C级用户</li>
+				</ul>
+			</div>
+		</div>
+		<div class="sign-body-window" id="sign-window0">
+			<div class="sign-body-window-info">
+				<p>A级用户享有最高权力：</p>
+				<p>1.上传文章</p>
+				<p>2.上传视频</p>
+				<p>3.解答问题</p>
+				<p>4.下载资源</p>
+				<p>5.发布问题</p>
+			</div>
+			<div class="sign-body-window-item">
+				<p>
+					<span>用户名</span>
+					<input id="s-a-user" class="s-input" type="text" title="中/英文,多余2个字符">
+				</p>
+				<p>
+					<span>真实姓名</span>
+					<input id="s-a-name" class="s-input" type="text" title="与身份证信息相符">
+				</p>
+				<p>
+					<span>身份证号</span>
+					<input id="s-a-id" class="s-input" type="text" title="与身份证信息相符">
+				</p>
+				<p>
+					<span>职业</span>
+					<input id="s-a-job" class="s-input" type="text" title="申请通过的重要依据">
+				</p>
+				<p>
+					<span>任职单位</span>
+					<input id="s-a-company" class="s-input" type="text" title="申请通过的重要依据">
+				</p>
+				<p>
+					<span>联系方式</span>
+					<input id="s-a-contact" class="s-input" type="text" title="校验信息发送途径">
+					<select size="1">
+						<option>电话</option>
+						<option>邮箱</option>
+						<option>主页地址</option>
+					</select>
+				</p>
+				<p>
+					<span>密码</span>
+					<input id="s-a-name" class="s-input" type="text" title="六位数以上，需英文、数字和特殊符号混合">
+				</p>
+				<p style="float: right; margin-right: 250px">
+					<input id="s-c-submit" type="button" value="提交" >
+				</p>
+			</div>
+		</div>
+		<div class="sign-body-window" id="sign-window1">
+			<div class="sign-body-window-info">
+				<p>B级用户享有最高权力：</p>
+				<p>1.解答问题</p>
+				<p>2.下载资源</p>
+				<p>3.发布问题</p>
+			</div>
+			<div class="sign-body-window-item">
+				<p>
+					<span>用户名</span>
+					<input id="s-b-user" class="s-input" type="text" title="中/英文,多余2个字符">
+				</p>
+				<p>
+					<span>职业</span>
+					<input id="s-b-job" class="s-input" type="text" title="申请通过的重要依据">
+				</p>
+				<p>
+					<span>任职单位</span>
+					<input id="s-b-company" class="s-input" type="text" title="申请通过的重要依据">
+				</p>
+				<p>
+					<span>联系方式</span>
+					<input id="s-b-contact" class="s-input" type="text" title="校验信息发送途径">
+					<select size="1">
+						<option>电话</option>
+						<option>邮箱</option>
+						<option>主页地址</option>
+					</select>
+				</p>
+				<p>
+					<span>密码</span>
+					<input id="s-b-name" class="s-input" type="text" title="六位数以上，需英文、数字和特殊符号混合">
+				</p>
+				<p style="float: right; margin-right: 250px">
+					<input id="s-c-submit" type="button" value="提交">
+				</p>
+			</div>
+		</div>
+		<div class="sign-body-window" id="sign-window2">
+			<div class="sign-body-window-info">
+				<p>C级用户享有最高权力：</p>
+				<p>1.下载资源</p>
+				<p>2.发布问题</p>
+			</div>
+			<div class="sign-body-window-item">
+				<p>
+					<span>用户名</span>
+					<input id="s-c-user" class="s-input" type="text" title="中/英文,多余2个字符">
+				</p>
+				<p>
+					<span>联系方式</span>
+					<input id="s-c-contact" class="s-input" type="text" title="校验信息发送途径">
+					<select size="1">
+						<option>电话</option>
+						<option>邮箱</option>
+						<option>主页地址</option>
+					</select>
+				</p>
+				<p>
+					<span>密码</span>
+					<input id="s-c-name" class="s-input" type="text" title="六位数以上，需英文、数字和特殊符号混合">
+				</p>
+				<p style="float: right; margin-right: 250px">
+					<input id="s-c-submit" type="button" value="提交">
+				</p>
+			</div>
+		</div>
+	</div>
+	<div id="sign-footer"></div>
+</body>
+</html>

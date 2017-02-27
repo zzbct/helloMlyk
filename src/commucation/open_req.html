@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>关于我们</title>
+	<link rel="stylesheet" type="text/css" href="../../css/basic.css">
+</head>
+<body>
+	<div>
+		<div class="path">
+			<a href="#">首页</a>
+			>>
+			<a href="#">交流区</a>
+			>>
+			<span style="font-weight: 4px;">公开问题</span>
+		</div>
+		<div id="oreq-left-body" class="left-basicmenu">
+			<div class="left-title">交流区</div>
+			<div class="left-submenu">
+				<ul class="submenu-sub">
+					<li onclick="changeMainbodyToHth()">私人订制</li>
+					<li onclick="changeMainbodyToO_req()" style="border:1px solid #F4D864;background-color: #82B486;">公开问题</li>
+					<li onclick="changeMainbodyToS_req()">解答问题</li>
+				</ul>
+			</div>
+		</div>
+		<div class="body-window">
+			<div class="body-window-title">交流区--公开问题</div>
+			<div id="item-oreq" class="body-item">
+				<div>
+					<div id="keyword-item">
+						<div>
+							<input type="text" />
+							<input type="button" value='添加关键字'>
+						</div>
+						<div >
+							标签
+						</div>
+					</div>
+					<div id="ques-item">
+						<div>
+							问题描述：
+							<textarea name="textarea" id="textarea" cols='50' rows='2'>
+							</textarea>
+							<input type="button" value="上传">
+						</div>
+					</div>
+		        </div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

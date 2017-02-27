@@ -1,0 +1,40 @@
+/*heardToheard.html*/
+.doctor-img{
+	min-height: 200px;
+}
+.doctor-img>ul{
+	width:730px;
+}
+.doctor-img>ul>li{
+	width:145px;
+	height:130px;
+	float: left;
+	margin-right: 30px;
+	margin-bottom: 50px;
+}
+.doctor-img>ul>li>img{
+	width:100%;
+	height:100%;
+}
+.doctor-img>ul>li:hover div{
+	opacity: 0.6;
+}
+.doctorToHeart{
+	min-height: 230px;
+	position: relative;
+	top:0px;
+}
+
+/*open_req.html*/
+#keyword-item{
+	width:700px;
+	height:100px;
+	margin: 10px 30px;
+	border: 1px solid #E31A1A;
+}
+#ques-item{
+	width:700px;
+	height:150px;
+	margin:0px 30px;
+	border: 1px solid #E31A1A;
+}

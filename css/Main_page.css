@@ -1,0 +1,219 @@
+body#main_page{
+	/*background-color: #E2C20D;*/
+	background-image: url('../image/head-bg5.jpg');
+}
+/*整体架构*/
+#header-body{
+	display:block;
+	position:absolute;
+	width:100%;
+	min-height:300px;
+	top:0px;
+	left:0px;
+	background-color: #FFFFFF;
+}
+#main-body{
+	display:block;
+	width:100%;
+	position: absolute;
+	top:500px;
+	left:0px;
+	margin:200px 0px;
+}
+#main-body-change{
+	float: left;
+	width: 75%;
+	max-height: 1100px;
+}
+#main-body-right{
+	float: right;
+	width: 25%;
+	max-height: 1300px;
+	background-color: #FFFFFF;
+}
+#handle-charts{
+	width:30px;
+	height:20px;
+	margin-top: 5px;
+}
+#handle-charts>img{
+	width:30px;
+	height:20px;
+}
+.footer-body{
+	display:block;
+	position: absolute;
+	top:2500px;
+	left:0px;
+	width:100%;
+	min-height:50px;
+	background-color: #FFFFFF;
+}
+/*header-body*/
+#static_header{
+	display:block;
+	width:100%;
+	position: absolute;
+	top:0px;
+	left:0px;
+}
+/*static_header{
+	up-head{
+		up-search,
+		up-info[
+			logo-nav,
+		    info-nav
+		],
+	}
+	menu-head[menu-nav[.menu]],
+	bottom-head
+}*/
+/*up-head部分的CSS*/
+#up-head{
+	position:absolute;
+	height: 160px;
+	width:100%;
+	top:0px;
+	left:0px;
+	margin: 30px 0px;
+	border-bottom: 1px solid #A99D9D;
+}
+#up-search{
+	position:absolute;
+	height: 30px;
+	width:100%;
+	top:20px;
+	left:0px;
+	border-bottom: 1px solid #A99D9D;
+}
+#search-text{
+	float:right;
+	margin:0px 0px 10px 10px;
+}
+#search-icon{
+	width:28px;
+	height: 28px;
+	float: right;
+	margin:0px 80px 10px 0px;
+	border:1px solid #A99D9D;
+}
+
+#up-info{
+	position:relative;
+	height: 100px;
+	top:60px;
+	left:0px;
+}
+#logo-nav{
+	float: left;
+	margin:20px 0;
+}
+#logo-nav>li>a>img{
+	width:80px;
+	height:70px;
+}
+#info-nav{
+	float:right;
+	margin:30px 100px;
+}
+#info-nav>div{
+	float: left;
+	margin:0 2px;
+	width:200px;
+}
+#info-nav>div>span{
+	padding-top: 10px;
+	font-size: 30px;
+	cursor: pointer;
+}
+/*未登录前个人中心链接不可见"background-color:#2FA636"*/
+#memberpage-link{
+	display:none;
+}
+/*menu-head部分的CSS*/
+#menu-head{
+	position:absolute;
+	min-height: 100px;
+	width:100%;
+	top:190px;
+	left:0px;
+}
+#menu-nav{
+	width:100%;
+}
+.menu li {
+	float: left;
+	width:200px;
+	margin-left: 150px;
+}
+.menu li a {
+	color: #444;
+	display: block;
+	font-size:25px;
+	line-height: 20px;
+	padding: 6px 12px;
+	margin: 8px 8px;
+	vertical-align: middle;
+}
+.menu li a:hover {
+	background: -webkit-gradient(linear, center top, center bottom, from(#ededed), to(#fff));
+	background-image: linear-gradient(#ededed, #fff);
+	border-radius: 12px;
+	box-shadow: inset 0px 0px 1px 1px rgba(0,0,0,0.1);
+	color: #222;
+}
+.menu ul {
+	position: absolute;
+	left:-9999px;
+	list-style: none;
+	opacity: 0;
+	transition: opacity 1s ease;
+}
+.menu ul li {
+	float: none;
+}
+.menu ul a {
+	white-space: nowrap;
+}
+.menu li:hover ul {
+	position:relative;
+	left:-50px;
+	width:200px;
+	border:1px solid #A99D9D;
+	background-color: #FFFCFC;
+	opacity: 1;
+}
+.menu li:hover a {
+	background: -webkit-gradient(linear, center top, center bottom, from(#ccc), to(#ededed));
+	background-image: linear-gradient(#ccc, #ededed);
+	border-radius: 8px;
+	box-shadow: inset 0px 0px 1px 1px rgba(0,0,0,0.1);
+	color: #222;
+}
+.menu li:hover ul a {
+	position:relative;
+	left:-198px;
+	width:218px;
+	font-size: 16px;
+	background: none;
+	border-radius: 0;
+	box-shadow: none;
+}
+.menu li:hover ul li a:hover {
+	background: -webkit-gradient(linear, center top, center bottom, from(#eee), to(#fff));
+	border-top:1px solid #A99D9D;
+	border-bottom: 1px solid #A99D9D;
+	box-shadow: inset 0px 0px 4px 2px rgba(0,0,0,0.3);
+}
+
+/*bottom-head部分的CSS*/
+#bottom-head{
+	background-color: #F0BE06;
+	position:absolute;
+	height: 10px;
+	width:100%;
+	top:290px;
+	left:0px;
+	border: 1px solid #A99D9D;
+	z-index: -999px;
+}

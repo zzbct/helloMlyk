@@ -1,0 +1,33 @@
+.login{
+	background-color: #E2C20D;
+	min-height:1000px;
+}
+
+#login-body{
+	position: absolute;
+	left:400px;
+	top:0px;
+	width:30%;
+	height:250px;
+	text-align: left;
+	background-color: #FFFFFF;
+}
+#login-footer{
+	width:100%;
+	min-height:50px;
+}
+#login-body>p{
+	padding-left: 60px;
+	margin-top:30px;
+	font-size: 20px;
+}
+#login-body>p>a{
+	float: right;
+	margin-right: 10px;
+	font-size: 16px;
+	color:#4C2F2F;
+}
+.l-input{
+	position: absolute;
+	left:150px;
+}

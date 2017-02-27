@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>交流区</title>
+	<link rel="stylesheet" type="text/css" href="../css/basic.css">
+	<link rel="stylesheet" href="../css/commucation.css">
+</head>
+<body>
+	<div>
+		<div class="path">
+			<a href="#">首页</a>
+			>>
+			<a href="#">交流区</a>
+			>>
+			<span style="font-weight: 4px;">私人订制</span>
+		</div>
+		<div id="hth-left-body" class="left-basicmenu">
+			<div class="left-title">交流区</div>
+			<div class="left-submenu">
+				<ul class="submenu-sub">
+					<li onclick="changeMainbodyToHth()" style="border:1px solid #F4D864;background-color: #82B486;">私人订制</li>
+					<li onclick="changeMainbodyToO_req()">公开问题</li>
+					<li onclick="changeMainbodyToS_req()">解答问题</li>
+				</ul>
+			</div>
+		</div>
+		<div class="body-window">
+			<div class="body-window-title">交流区--私人定制</div>
+			<div id="item-hth" class="body-item">
+				<div class="item-link">
+					<p>
+					<a href="#">内科</a>
+						<span>：　</span>
+						<a class='c-doctor' value='211' onclick="filterDoctor(this)">普通内科</a>
+						<span>　｜　</span>
+						<a class='c-doctor' value='212' onclick="filterDoctor(this)">心血管内科</a>
+						<span>　｜　</span>
+						<a class='c-doctor' value='213' onclick="filterDoctor(this)">消化内科</a>
+					</p>
+					<p>
+						<a  href="#">外科</a>
+						<span>：　</span>
+						<a class='c-doctor' value='221' onclick="filterDoctor(this)">普通外科</a>
+						<span>　｜　</span>
+						<a class='c-doctor' value='222' onclick="filterDoctor(this)">神经外科</a>
+						<span>　｜　</span>
+						<a class='c-doctor' value='223' onclick="filterDoctor(this)">泌尿外科</a>
+						<span>　｜　</span>
+						<a class='c-doctor' value='224' onclick="filterDoctor(this)">肝胆外科</a>
+						<span>　｜　</span>
+						<a class='c-doctor' value='225' onclick="filterDoctor(this)">心血管外科</a>
+						<span>　｜　</span>
+						<a class='c-doctor' value='226' onclick="filterDoctor(this)">微创外科</a>
+					</p>
+					<p>
+						<a href="#">儿科</a>
+						<span>：　</span>
+						<a class='c-doctor' value='231' onclick="filterDoctor(this)">儿科综合</a>
+						<span>　｜　</span>
+						<a class='c-doctor' value='232' onclick="filterDoctor(this)">小儿消化科</a>
+						<span>　｜　</span>
+						<a class='c-doctor' value='233' onclick="filterDoctor(this)">小儿心外科</a>
+						<span>　｜　</span>
+						<a class='c-doctor' value='234' onclick="filterDoctor(this)">小儿感染科</a>
+					</p>
+					<p>
+						<a href="#">五官科</a>
+						<span>：　</span>
+						<a class='c-doctor' value='241' onclick="filterDoctor(this)">耳鼻喉头颈科</a>
+						<span>　｜　</span>
+						<a class='c-doctor' value='242' onclick="filterDoctor(this)">口腔科</a>
+						<span>　｜　</span>
+						<a class='c-doctor' value='243' onclick="filterDoctor(this)">眼科</a>
+					</p>
+					<p>
+						<a href="#">妇产科</a>
+						<span>：　</span>
+						<a class='c-doctor' value='251' onclick="filterDoctor(this)">妇产科综合</a>
+						<span>　｜　</span>
+						<a class='c-doctor' value='252' onclick="filterDoctor(this)">遗传咨询科</a>
+						<span>　｜　</span>
+						<a class='c-doctor' value='253' onclick="filterDoctor(this)">产科</a>
+					</p>
+					<p>
+						<a href="#">康复医学科</a>
+						<span>：　</span>
+						<a class='c-doctor' value='261' onclick="filterDoctor(this)">康复科</a>
+						<span>　｜　</span>
+						<a class='c-doctor' value='262' onclick="filterDoctor(this)">理疗科</a>
+					</p>
+					<p>
+						<a href="#">其他</a>
+						<span>：　</span>
+						<a class='c-doctor' value='271' onclick="filterDoctor(this)">骨科</a>
+						<span>　｜　</span>
+						<a class='c-doctor' value='272' onclick="filterDoctor(this)">肿瘤科</a>
+						<span>　｜　</span>
+						<a class='c-doctor' value='273' onclick="filterDoctor(this)">神秘跨界者</a>
+					</p>
+				</div>
+				<div class="body-window-title">定制库</div>
+				<div class="doctor-img">
+					<ul>
+						<li class="doctor-list" value="222">
+							<img src="../image/doctor-icon8.jpg">
+							<div class = "float-info">
+								<p>神经外科</p>
+								<p>
+									威望值:+40
+									<img src="../image/honor-icon0.jpg" title="集赞量">1000
+								</p>
+								<p>
+									活跃度:300
+								</p>
+								<p>
+									点击图片进入私人问答
+								</p>
+							</div>
+						</li>
+						<li class="doctor-list" value="261">
+							<img src="../image/doctor-icon1.jpg">
+							<div class = "float-info">
+								<p>康复科</p>
+								<p>
+									威望值:+40
+									<img src="../image/honor-icon0.jpg" title="集赞量">800
+								</p>
+								<p>
+									活跃度:280
+								</p>
+								<p>
+									点击图片进入私人问答
+								</p>
+							</div>
+						</li>
+						<li class="doctor-list" value="222">
+							<img src="../image/doctor-icon3.jpg">
+							<div class = "float-info">
+								<p>神经外科</p>
+								<p>
+									威望值:+37
+									<img src="../image/honor-icon0.jpg" title="集赞量">900
+								</p>
+								<p>
+									活跃度:320
+								</p>
+								<p>
+									点击图片进入私人问答
+								</p>
+							</div>
+						</li>
+						<li class="doctor-list" value="231">
+							<img src="../image/gdoctor-icon0.jpg">
+							<div class = "float-info">
+								<p>儿科综合</p>
+								<p>
+									威望值:+30
+									<img src="../image/honor-icon0.jpg" title="集赞量">1300
+								</p>
+								<p>
+									活跃度:400
+								</p>
+								<p>
+									点击图片进入私人问答
+								</p>
+							</div>
+						</li>
+						<li class="doctor-list" value="211">
+							<img src="../image/gdoctor-icon1.jpg">
+							<div class = "float-info">
+								<p>普通内科</p>
+								<p>
+									威望值:+27
+									<img src="../image/honor-icon0.jpg" title="集赞量">700
+								</p>
+								<p>
+									活跃度:200
+								</p>
+								<p>
+									点击图片进入私人问答
+								</p>
+							</div>
+						</li>
+						<li class="doctor-list" value="273">
+							<img src="../image/doctor-icon4.jpg">
+							<div class = "float-info">
+								<p>神秘跨界者</p>
+								<p>
+									威望值:+26
+									<img src="../image/honor-icon0.jpg" title="集赞量">760
+								</p>
+								<p>
+									活跃度:260
+								</p>
+								<p>
+									点击图片进入私人问答
+								</p>
+							</div>
+						</li>
+						<li class="doctor-list" value='272'>
+							<img src="../image/gdoctor-icon2.jpg">
+							<div class = "float-info">
+								<p>肿瘤科</p>
+								<p>
+									威望值:+23
+									<img src="../image/honor-icon0.jpg" title="集赞量">450
+								</p>
+								<p>
+									活跃度:100
+								</p>
+								<p>
+									点击图片进入私人问答
+								</p>
+							</div>
+						</li>
+						<li class="doctor-list" value="251">
+							<img src="../image/gdoctor-icon4.jpg">
+							<div class = "float-info">
+								<p>妇产科综合</p>
+								<p>
+									威望值:+19
+									<img src="../image/honor-icon0.jpg" title="集赞量">800
+								</p>
+								<p>
+									活跃度:500
+								</p>
+								<p>
+									点击图片进入私人问答
+								</p>
+							</div>
+						</li>
+						<li class="doctor-list" value="221">
+							<img src="../image/doctor-icon5.jpg">
+							<div class = "float-info">
+								<p>普通外科</p>
+								<p>
+									威望值:+15
+									<img src="../image/honor-icon0.jpg" title="集赞量">300
+								</p>
+								<p>
+									活跃度:200
+								</p>
+								<p>
+									点击图片进入私人问答
+								</p>
+							</div>
+						</li>
+						<li class="doctor-list" value="226">
+							<img src="../image/doctor-icon6.jpg">
+							<div class = "float-info">
+								<P>微创外科</P>
+								<p>
+									威望值:+13
+									<img src="../image/honor-icon0.jpg" title="集赞量">400
+								</p>
+								<p>
+									活跃度:300
+								</p>
+								<p>
+									点击图片进入私人问答
+								</p>
+							</div>
+						</li>
+						<li class="doctor-list" value="243">
+							<img src="../image/doctor-icon7.jpg">
+							<div class = "float-info">
+								<p>眼科</p>
+								<p>
+									威望值:+10
+									<img src="../image/honor-icon0.jpg" title="集赞量">280
+								</p>
+								<p>
+									活跃度:80
+								</p>
+								<p>
+									点击图片进入私人问答
+								</p>
+							</div>
+						</li>
+						<li class="doctor-list" value="271">
+							<img src="../image/doctor-icon0.jpg">
+							<div class = "float-info">
+								<p>骨科</p>
+								<p>
+									威望值:+9
+									<img src="../image/honor-icon0.jpg" title="集赞量">100
+								</p>
+								<p>
+									活跃度:230
+								</p>
+								<p>
+									点击图片进入私人问答
+								</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

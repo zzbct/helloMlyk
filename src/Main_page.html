@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>医疗咨询系统首页</title>
+	<script type="text/javascript"></script>
+	<script type="text/javascript" src="http://cdn.hcharts.cn/jquery/jquery-1.8.3.min.js">
+	</script>
+	<script type="text/javascript" src="http://cdn.hcharts.cn/highcharts/highcharts.js">
+	</script>
+	<script type="text/javascript" src="../js/main_page.js"></script>
+	<script type="text/javascript" src="../js/mainbody_first_mov.js"></script>
+	<script type="text/javascript" src="../js/static_header.js"></script>
+	<script type="text/javascript" src="../js/change_mainbody.js"></script>
+	<script type="text/javascript" src="../js/charts.js"></script>
+	<script type="text/javascript" src="../js/chart-slider.js"></script>
+	<script type="text/javascript" src="../js/sign.js"></script>
+	<script type="text/javascript" src="../js/login.js"></script>
+	<script type="text/javascript" src="../js/disease_database.js"></script>
+	<script type="text/javascript" src="../js/communication.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('#main-body-change').load('mainbody_first.html');
+			chartSlide();
+		});
+	</script>
+	<link rel="stylesheet" href="../css/Main_page.css/">
+	<link rel="stylesheet" href="../css/basic.css/">
+	<link rel="stylesheet" type="text/css" href="../css/static_main_right.css">
+	<link rel="stylesheet" type="text/css" href="../css/mainbody_first.css">
+	<link rel="stylesheet" type="text/css" href="../css/disease_database.css">
+	<link rel="stylesheet" type="text/css" href="../css/commucation.css">
+</head>
+<body id="main_page" style="background-image: url('../image/head-bg5.jpg');background-repeat: no-repeat;background-color: #E2C20D">
+	<div id="header-body">
+		<div id="static_header">
+			<div id="up-head">
+				<nav role="navigation">
+					<div id="up-search">
+						<img id="search-icon"  src="../image/search-icon.png">
+						<input id="search-text" type="text" placeholder="搜索" title="Search KeyWord">
+					</div>
+					<div id="up-info">
+						<ul id="logo-nav">
+						    <li>
+								<a href="#" title="返回主页" >
+									<img src="../image/header.png" onclick="changeMainbodyToHome()">
+								</a>
+							</li>
+						</ul>
+						<div id="info-nav">
+							<div id="sign-link" style="background-color: #F0BE06">
+								<span title="sign" onclick="changeMainbodyToSign()">
+									注册
+								</span>
+							</div>
+							<div id="login-link" style="background-color: #26C1EF">
+								<span title="login" onclick="changeMainbodyToLogin()">
+									登录
+								</span>
+							</div>
+							<div id="memberpage-link" style="background-color:#82B486">
+								<span title="Go to your home page">
+								个人中心
+								</span>
+							</div>
+						</div>
+					</div>
+				</nav>
+			</div>
+			<div id="menu-head">
+			<nav id="menu-nav" role="nagvigation">
+				<ul class="menu">
+						<li onclick="changeMainbodyToHome()"><a href="#">首页</a></li>
+						<li><a href="#">症状库</a>
+							<ul>
+								<li onclick="changeMainbodyToHead()"><a href="#">头部</a></li>
+								<li onclick="changeMainbodyToNeck()"><a href="#">颈部</a></li>
+								<li onclick="changeMainbodyToAbdomen()"><a href="#">腹部</a></li>
+								<li onclick="changeMainbodyToWaist()"><a href="#">腰部</a></li>
+								<li onclick="changeMainbodyToHip()"><a href="#">臀部</a></li>
+								<li onclick="changeMainbodyToSkin()"><a href="#">皮肤</a></li>
+								<li onclick="changeMainbodyToArmandleg()"><a href="#">四肢</a></li>
+								<li onclick="changeMainbodyToBack()"><a href="#">背部</a></li>
+								<li onclick="changeMainbodyToHair()"><a href="#">毛发</a></li>
+								<li onclick="changeMainbodyToOther()"><a href="#">其它</a></li>
+							</ul>
+						</li>
+						<li><a href="#">关于我们</a>
+							<ul>
+								<li onclick="changeMainbodyToFund()">
+								<a href="#">资助</a></li>
+								<li onclick="changeMainbodyToCompliantbox()">
+								<a href="#">意见箱</a></li>
+								<li onclick="changeMainbodyToUpmov()"><a href="#">上传视频</a></li>
+								<li onclick="changeMainbodyToUparticle()"><a href="#">上传文章</a></li>
+							</ul>
+						</li>
+						<li><a href="#">交流区</a>
+							<ul>
+								<li onclick="changeMainbodyToHth()"><a href="#">私人定制</a></li>
+								<li onclick="changeMainbodyToO_req()"><a href="#">公开问题</a></li>
+								<li onclick="changeMainbodyToS_req()"><a href="#">解答问题</a></li>
+							</ul>
+						</li>
+		         </ul>
+				<div class="clearfix"></div>
+			</nav>
+			</div>
+	<!--<div id="bottom-head"></div>-->
+		</div>
+	</div>
+	<div id="mid-body">
+		<img src="../../image/head-bg1.jpg">
+	</div>
+	<div id="main-body">
+		<div id="main-body-change"></div>
+		<div id='main-body-right'>
+			<div id="handle-charts">
+				<img src="../image/hide-icon0.jpg" title='open or close these charts' onclick="hideOrshow_charts(this)">
+			</div>
+			<div id='main-right'>
+				<div id="item_0" class="item"  value="87" onmouseover="changeValue0_in()" onmouseout="changeValue0_out()">
+					<div class="second-title">问题活跃度</div>
+					<div id="q-month-table" class="chart"></div>
+					<div id="q-week-table" class="chart"></div>
+					<div id="q-day-table" class="chart"></div>
+				</div>
+				<div id="item_1" class="item" value="88" onmouseover="changeValue1_in()" onmouseout="changeValue1_out()">
+					<div class="second-title">雷锋榜</div>
+					<div id="h-month-table" class="chart1"></div>
+					<div id="h-week-table"  class="chart1"></div>
+					<div id="h-day-table" class="chart1"></div>
+				</div>
+				<div  id="item_2" class="item" value="89">
+					<div class="second-title">订阅信息推送</div>
+					<div class="subscribe-way">
+						<p>短信方式</p>
+						<p>
+							<img class="subscribe-icon" src="../image/cell-icon1.jpg">
+							手机
+							<input id="cell-text" type="text">
+							<input id="cell-button" type="button" value="确定" title="click to submit">
+						</p>
+					</div>
+					<div class="subscribe-way">
+						<p>邮箱方式</p>
+						<p>
+							<img class="subscribe-icon" src="../image/mail-icon1.jpg">
+							邮箱
+							<input id="mail-text" type="text">
+							<input id="mail-button" type="button" value="确定" title="click to submit">
+						</p>
+					</div>
+					<div class="subscribe-way">
+						<p>下载链接</p>
+						<p>
+							<img class="subscribe-icon" src="../image/pc-icon0.jpg">
+							<a class="dowload-link" href="#">PC客户端</a>
+							<img class="subscribe-icon" src="../image/phone-icon0.jpg">
+							<a class="dowload-link" href="#">手机客户端</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer-body">尾部</div>
+</body>
+</html>

@@ -1,0 +1,157 @@
+#main-body-left{
+	float: left;
+	width:280px;
+	min-height: 300px;
+	margin-right:20px;
+}
+#main-body-center{
+	float: left;
+	left:300px;
+	width:750px;
+	max-height: 1100px;
+	margin-left:30px;
+	margin-right:20px;
+	background-color: #FFFFFF;
+}
+#main-body-center-up{
+	margin:50px 0px;
+	width:750px;
+	height:300px;
+	background-color: #F6F6F2;
+}
+#main-body-center-bottom{
+	margin:50px 0px;
+	width:750px;
+	height:700px;
+}
+/*main-body-center-up*/
+#go-left{
+	float:left;
+	width:50px;
+	height:50px;
+	margin-left:20px;
+	margin-top: 120px;
+}
+#go-right{
+	float:right;
+	width:50px;
+	height:50px;
+	margin-right:20px;
+	margin-top: 120px;
+}
+#main-center-mov{
+	float: left;
+	width:600px;
+	height:300px;
+}
+#mov-plat{
+	float: left;
+	width:420px;
+	height:299px;
+}
+#mov-plat>img{
+	width: 100%;
+	height:100%;
+}
+#mov-info{
+	float: left;
+	width:175px;
+	height:299px;
+}
+#mov-info>p{
+	width:160px;
+	font-size:16px;
+	color: #887A7A;
+	text-align: left;
+	padding-left: 15px;
+}
+/*main-body-center-bottom*/
+#main-body-center-bottom-div0{
+	width:750px;
+	height:350px;
+}
+#left-item{
+	float: left;
+	width:345px;
+	height:330px;
+	margin:10px 20px;
+}
+#right-item{
+	float: right;
+	width:345px;
+	height:330px;
+	margin:10px 8px;
+}
+
+.second-title{
+	width: 100%;
+	height:25px;
+	text-align: left;
+	padding-bottom:3px;
+	border-bottom: 1px solid #AAA7A7;
+}
+.ques-list{
+	width:100%;
+	color:#573F0A;
+}
+.ques-list>ul{
+	text-align: left;
+}
+.ques{
+	font-size:16px;
+	color:#573F0A;
+	cursor: pointer;
+}
+.ques:hover{
+	text-decoration: underline;
+	color:#C23636;
+}
+/*左侧栏症状查询展开*/
+.submenu-sub>li:hover div{
+	display: block;
+}
+
+.detail-menu{
+	min-width: 300px;
+	min-height: 60px;
+	padding: 10px;
+	position: absolute;
+	left: 280px;
+	text-align: left;
+	border: 2px solid #F4D864;
+	background-color: #FFFFFF;
+	display: none;
+}
+.detail-menu>p>a:hover{
+	text-decoration: underline;
+}
+#detail-0{
+	top: 45px;
+}
+#detail-1{
+	top: 74px;
+}
+#detail-2{
+	top: 108px;
+}
+#detail-3{
+	top: 140px;
+}
+#detail-4{
+	top: 173px;
+}
+#detail-5{
+	top: 205px;
+}
+#detail-6{
+	top: 240px;
+}
+#detail-7{
+	top: 273px;
+}
+#detail-8{
+	top: 305px;
+}
+#detail-9{
+	top: 338px;
+}

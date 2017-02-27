@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>关于我们</title>
+	<link rel="stylesheet" type="text/css" href="../css/basic.css">
+</head>
+<body>
+	<div>
+		<div class="path">
+			<a href="#">首页</a>
+			>>
+			<a href="#">症状库</a>
+			>>
+			<span style="font-weight: 4px;">头部</span>
+		</div>
+		<div id="head-left-body" class="left-basicmenu">
+			<div class="left-title">症状库</div>
+			<div class="left-submenu">
+				<ul class="submenu-sub">
+				<!--症状字典扩展-->
+					<li style="border:1px solid #F4D864;
+					          background-color: #82B486;"
+					onclick="changeMainbodyToHead()">头部
+					</li>
+					<li onclick="changeMainbodyToNeck()">颈部
+					</li>
+					<li onclick="changeMainbodyToAbdomen()">腹部
+					</li>
+					<li onclick="changeMainbodyToWaist()">腰部
+					</li>
+					<li onclick="changeMainbodyToHip()">臀部
+					</li>
+					<li onclick="changeMainbodyToSkin()">皮肤
+					</li>
+					<li onclick="changeMainbodyToArmandleg()">四肢
+					</li>
+					<li onclick="changeMainbodyToBack()">背部
+					</li>
+					<li onclick="changeMainbodyToHair()">毛发
+					</li>
+					<li onclick="changeMainbodyToOther()">其它
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="body-window">
+			<div class="body-window-title">症状库--头部</div>
+			<div id="item-head" class="body-item">
+				<div class="item-link">
+					<p>
+					<a href="#">脸</a>
+						<span>：　</span>
+						<a class="dis" value='111' onclick="filterMov(this)" >长痘</a>
+						<span>　｜　</span>
+						<a class="dis" value='112' onclick="filterMov(this)">过敏</a>
+					</p>
+					<p>
+						<a  href="#">眼</a>
+						<span>：　</span>
+						<a class="dis" value='121' onclick="filterMov(this)">夜盲</a>
+						<span>　｜　</span>
+						<a class='dis' value='122' onclick="filterMov(this)">眼前发黑</a>
+						<span>　｜　</span>
+						<a class='dis' value='123' onclick="filterMov(this)">盲点</a>
+					</p>
+					<p>
+						<a href="#">鼻</a>
+						<span>：　</span>
+						<a class='dis' value='131' onclick="filterMov(this)">幻味</a>
+						<span>　｜　</span>
+						<a class='dis' value='132' onclick="filterMov(this)">嗅觉倒错</a>
+						<span>　｜　</span>
+						<a class='dis' value='133' onclick="filterMov(this)">呼吸急促</a>
+						<span>　｜　</span>
+						<a class='dis' value='134' onclick="filterMov(this)">反复鼻出血</a>
+					</p>
+					<p>
+						<a href="#">耳</a>
+						<span>：　</span>
+						<a class='dis' value='141' onclick="filterMov(this)">耳后疼痛</a>
+						<span>　｜　</span>
+						<a class='dis' value='142' onclick="filterMov(this)">间歇性耳痛</a>
+						<span>　｜　</span>
+						<a class='dis' value='143' onclick="filterMov(this)">中枢性耳聋</a>
+					</p>
+					<p>
+						<a href="#">口</a>
+						<span>：　</span>
+						<a class='dis' value='151' onclick="filterMov(this)">智齿</a>
+						<span>　｜　</span>
+						<a class='dis' value='152' onclick="filterMov(this)">唇部发绀</a>
+					</p>
+				</div>
+				<div class="body-window-title">视频区</div>
+				<div class="disease-mov">
+					<ul>
+						<li class="mov-list" value="111">
+							<img src="../image/disease-mov-icon0.jpg">
+							<div class = "float-info">
+								<p>
+									主题:长痘　
+									<img src="../image/honor-icon0.jpg" title="点赞量">100
+								</p>
+								<p>
+									推荐指数：
+									<img src="../image/star-icon0.jpg">
+									<img src="../image/star-icon0.jpg">
+									<img src="../image/star-icon0.jpg">
+									<img src="../image/star-icon0.jpg">
+								</p>
+								<p> <img src="../image/12-20.jpg">
+								    发布者:JY　威望:+13
+								</p>
+								<p>发布时间：2016/03/09 </p>
+							</div>
+						</li>
+						<li class="mov-list" value="123">
+							<img src="../image/disease-mov-icon1.jpg">
+							<div class = "float-info">
+								<p>
+									主题:盲点　
+									<img src="../image/honor-icon0.jpg" title="点赞量">90
+								</p>
+								<p>
+									推荐指数：
+									<img src="../image/star-icon0.jpg">
+									<img src="../image/star-icon0.jpg">
+								</p>
+								<p> <img src="../image/21-40.jpg">
+								    发布者:糖糖　威望:+23
+								</p>
+								<p>发布时间：2016/06/09 </p>
+							</div>
+						</li>
+						<li class="mov-list" value="133">
+							<img src="../image/disease-mov-icon2.jpg">
+							<div class = "float-info">
+								<p>
+									主题:呼吸急促　
+									<img src="../image/honor-icon0.jpg" title="点赞量">88
+								</p>
+								<p>
+									推荐指数：
+									<img src="../image/star-icon0.jpg">
+									<img src="../image/star-icon0.jpg">
+									<img src="../image/star-icon0.jpg">
+									<img src="../image/star-icon0.jpg">
+								</p>
+								<p> <img src="../image/21-40.jpg">  
+								    发布者:小鱼　威望:+33
+								</p>
+								<p>发布时间：2016/01/09 </p>
+							</div>
+						</li>
+						<li class="mov-list" value="123">
+							<img src="../image/disease-mov-icon3.jpg">
+							<div class = "float-info">
+								<p>
+									主题:盲点　
+									<img src="../image/honor-icon0.jpg" title="点赞量">6
+								</p>
+								<p>
+									推荐指数：
+									<img src="../image/star-icon0.jpg">
+									<img src="../image/star-icon0.jpg">
+									<img src="../image/star-icon0.jpg">
+									<img src="../image/star-icon0.jpg">
+								</p>
+								<p> <img src="../image/1-11.jpg">
+								    发布者:k-o　威望:+9
+								</p>
+								<p>发布时间：2016/04/12 </p>
+							</div>
+						</li>
+						<li class="mov-list" value="131">
+							<img src="../image/disease-mov-icon4.jpg">
+							<div class = "float-info">
+								<p>
+									主题:幻味　
+									<img src="../image/honor-icon0.jpg" title="点赞量">30
+								</p>
+								<P>
+									推荐指数：
+									<img src="../image/star-icon0.jpg">
+									<img src="../image/star-icon0.jpg">
+									<img src="../image/star-icon0.jpg">
+								</p>
+								<p> <img src="../image/21-40.jpg">
+								    发布者:Mint　威望:+23
+								</p>
+								<p>发布时间：2016/03/09 </p>
+							</div>
+						</li>
+						<li class="mov-list" value="133">
+							<img src="../image/disease-mov-icon5.jpg">
+							<div class = "float-info">
+								<p>
+									主题:呼吸急促　
+									<img src="../image/honor-icon0.jpg" title="点赞量">47
+								</p>
+								<p>
+									推荐指数：
+									<img src="../image/star-icon0.jpg">
+									<img src="../image/star-icon0.jpg">
+									<img src="../image/star-icon0.jpg">
+								</p>
+								<p> <img src="../image/21-40.jpg">  
+								    发布者:卡卡　威望:+26
+								</p>
+								<p>发布时间：2016/05/29 </p>
+							</div>
+						</li>
+						<li class="mov-list" value='111'>
+							<img src="../image/disease-mov-icon6.jpg">
+							<div class = "float-info">
+								<p>
+									主题:长痘　
+									<img src="../image/honor-icon0.jpg" title="点赞量">6
+								</p>
+								<p>
+									推荐指数：
+									<img src="../image/star-icon0.jpg">
+									<img src="../image/star-icon0.jpg">
+									<img src="../image/star-icon0.jpg">
+									<img src="../image/star-icon0.jpg">
+								</p>
+								<p> <img src="../image/1-11.jpg">
+								    发布者:k-o　威望:+9
+
+								</p>
+								<p>发布时间：2016/04/12 </p>
+							</div>
+						</li>
+						<li class="mov-list" value="151">
+							<img src="../image/disease-mov-icon7.jpg">
+							<div class = "float-info">
+								<p>
+									主题:智齿　
+									<img src="../image/honor-icon0.jpg" title="点赞量">30
+								</p>
+								<p>
+									推荐指数：
+									<img src="../image/star-icon0.jpg">
+									<img src="../image/star-icon0.jpg">
+									<img src="../image/star-icon0.jpg">
+								</p>
+								<p> <img src="../image/21-40.jpg">
+								    发布者:Mint　威望:+23
+								</p>
+								<p>发布时间：2016/03/09 </p>
+							</div>
+						</li>
+						<li class="mov-list" value="133">
+							<img src="../image/disease-mov-icon8.jpg">
+							<div class = "float-info">
+								<p>
+									主题:呼吸急促　　
+								</p>
+								<p>
+									<img src="../image/honor-icon0.jpg" title="点赞量">47
+									推荐指数：
+									<img src="../image/star-icon0.jpg">
+									<img src="../image/star-icon0.jpg">
+									<img src="../image/star-icon0.jpg">
+								</p>
+								<p> <img src="../image/21-40.jpg">  
+								    发布者:卡卡　威望:+26
+								</p>
+								<p>发布时间：2016/05/29 </p>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="body-window-title">文章区</div>
+				<div class="disease-article">
+					<ul>
+						<li>
+							#
+							<a class="ques" href="#" title="Method for treating chronic rhinitis">慢性鼻炎治疗方法</a>
+						</li>
+						<li>
+							#
+							<a class="ques" href="#" title="What should be paid attention to in daily life of patients with hypertension">高血压患者日常要注意什么</a>
+						</li>
+						<li>
+							#
+							<a class="ques" href="#" title="点痣会有哪些危害">
+							点痣会有哪些危害</a>
+						</li>
+						<li>
+							#
+							<a class="ques"  href="#" title="布氏杆菌病能治愈吗">布氏杆菌病能治愈吗</a>
+						</li>
+						<li>
+							#
+							<a class='ques' href="#" title="糖尿病肾病能治愈吗">糖尿病肾病能治愈吗</a>
+						</li>
+						<li>
+							#
+							<a class='ques' href="#" title="低血压吃什么好">低血压吃什么好</a>
+						</li>
+						<li>
+							#
+							<a class='ques' href="#" title="八个月宝宝发烧怎么办">八个月宝宝发烧怎么办</a>
+						</li>
+						<li>
+							#
+							<a class='ques' href="#" title="肌肉拉伤怎么快速恢复">肌肉拉伤怎么快速恢复</a>
+						</li>
+						<li>
+							#
+							<a class='ques' href="#" title="胆结石病人应该忌吃 ">胆结石病人应该忌吃 </a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

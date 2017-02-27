@@ -1,0 +1,55 @@
+.sign{
+	background-color: #E2C20D;
+}
+#sign-body{
+	width:100%;
+	height:600px;
+	margin:0px auto;
+}
+#sign-footer{
+	width:100%;
+	min-height:50px;
+}
+.sign-body-window{
+	float:right;
+	width:750px;
+	height:500px;
+	margin:0px auto;
+	background-color: #FFFFFF;
+	border: 1px solid #972D2D;
+}
+.sign-body-window-info{
+	min-width:200px;
+	min-height:470px;
+	float: left;
+	text-align: left;
+	padding-top:30px;
+	padding-left:5px;
+	color: #E2C20D;
+	background-color: #0F0B0B;
+}
+.sign-body-window-item{
+	width:400px;
+	height:500px;
+	float: right;
+	font-size:16px;
+	text-align: left;
+	padding-left: 10px;
+}
+.sign-body-window-item>p{
+	margin-top:30px;
+	font-size: 20px;
+}
+.s-input{
+	float: right;
+	margin-right: 50px;
+}
+#sign-window0{
+	display: block;
+}
+#sign-window1{
+	display: none;
+}
+#sign-window2{
+	display: none;
+}
